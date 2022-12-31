@@ -1,4 +1,3 @@
-import React from 'react';
 import { useQuery } from 'react-query';
 import ProductItem from '../../components/product/item';
 import { fetcher, QueryKeys } from '../../queryClient';
