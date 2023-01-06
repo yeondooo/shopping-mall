@@ -1,8 +1,6 @@
 import { request, RequestDocument } from 'graphql-request';
-import { useQuery, useMutation, useQueryClient, QueryClient, QueryClientProvider } from 'react-query';
-// import { getTodos, postTodo } from '../my-api';
+import { QueryClient } from 'react-query';
 
-// Create a client
 export const getClient = (() => {
 	let client: QueryClient | null = null;
 	return () => {
@@ -61,4 +59,5 @@ export const graphqlFetcher = (query: RequestDocument, variables = {}) => reques
 
 export const QueryKeys = {
 	PRODUCTS: 'PRODUCTS',
+	CART: 'CART',
 };
